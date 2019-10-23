@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AsyncDisplayKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -22,8 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         // Nest the viewcontroller in a navigation controller
         let viewcontroller = ViewController()
-//        let navcontroller = UINavigationController(rootViewController: viewcontroller)
-        self.window?.rootViewController = viewcontroller
+        let navcontroller = ASNavigationController(rootViewController: viewcontroller)
+        self.window?.rootViewController = navcontroller
         self.window?.makeKeyAndVisible()
     }
     

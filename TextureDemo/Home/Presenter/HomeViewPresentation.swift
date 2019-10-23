@@ -29,7 +29,6 @@ class HomeViewPresentation: ASDisplayNode, ASCollectionDataSource{
     override init() {
         super.init()
         collectionView.dataSource = self
-       
         addSubnode(collectionView)
     }
         
@@ -60,6 +59,13 @@ class CellNode: ASCellNode{
     
     override init() {
         super.init()
+        backgroundColor = .blue
+        cornerRadius = 20
+        style.preferredSize = CGSize(width: 100, height: 100)
         addSubnode(label)
+    }
+    
+    override func layoutSpecThatFits(_ constrainedSize: ASSizeRange) -> ASLayoutSpec {
+        return ASInsetLayoutSpec(insets: UIEdgeInsets(top: 10, left: 10, bottom: 0, right: 10), child: label)
     }
 }

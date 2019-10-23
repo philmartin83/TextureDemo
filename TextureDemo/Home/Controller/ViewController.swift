@@ -17,6 +17,9 @@ class ViewController: ASViewController<ASDisplayNode>{
         super.init(node: ASDisplayNode())
         homeNode = HomeViewPresentation()
         self.node.addSubnode(homeNode)
+        node.layoutSpecBlock = { (node, constrainedSize) in
+            return ASInsetLayoutSpec(insets: UIEdgeInsets.zero, child: self.homeNode)
+        }
     }
 
     
