@@ -2,12 +2,11 @@
 //  AppDelegate.swift
 //  TextureDemo
 //
-//  Created by Phil Martin on 22/10/2019.
-//  Copyright © 2019 Phil Martin. All rights reserved.
+//  Created by Philip Martin on 23/10/2019.
+//  Copyright © 2019 Philip Martin. All rights reserved.
 //
 
 import UIKit
-
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
