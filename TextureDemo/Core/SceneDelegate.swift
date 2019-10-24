@@ -24,6 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Nest the viewcontroller in a navigation controller
         let viewcontroller = ViewController()
         let navcontroller = ASNavigationController(rootViewController: viewcontroller)
+        navcontroller.navigationBar.isTranslucent = false
         self.window?.rootViewController = navcontroller
         self.window?.makeKeyAndVisible()
     }

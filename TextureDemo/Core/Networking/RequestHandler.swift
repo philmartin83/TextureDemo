@@ -11,9 +11,8 @@ import Foundation
 class RequestHandler{
     let baseURL = "https://www.breakingbadapi.com/api/"
     
-    func getAllCharacters() -> URLRequest{
+    func getAllCharacters() -> String{
         let url = baseURL + "characters"
-        let request = URLRequest(url: URL(string: url)!)
-        return request
+        return url
     }
 }

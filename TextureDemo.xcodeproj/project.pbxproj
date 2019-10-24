@@ -26,6 +26,8 @@
 		4A4607FC2361067E00F6A621 /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A4607FB2361067E00F6A621 /* Characters.swift */; };
 		4A460801236108DD00F6A621 /* CharacterCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A460800236108DD00F6A621 /* CharacterCollectionDataSource.swift */; };
 		7B741D6CB678F66D89AF11C4 /* Pods_TextureDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0A832F3ECF4056145D04E2 /* Pods_TextureDemoTests.framework */; };
+		FF0D416D2361E6B90044D093 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D416C2361E6B90044D093 /* CharacterCell.swift */; };
+		FF0D416F236201C10044D093 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0D416E236201C10044D093 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		4A460800236108DD00F6A621 /* CharacterCollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCollectionDataSource.swift; sourceTree = "<group>"; };
 		63D9F051E649E28604A468DC /* Pods-TextureDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TextureDemoTests/Pods-TextureDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A14A0561A8849A2A8CDBF360 /* Pods-TextureDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextureDemo.release.xcconfig"; path = "Target Support Files/Pods-TextureDemo/Pods-TextureDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FF0D416C2361E6B90044D093 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterCell.swift; path = TextureDemo/Home/CharacterCell.swift; sourceTree = SOURCE_ROOT; };
+		FF0D416E236201C10044D093 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				4A4607E32360FBE200F6A621 /* Core */,
+				FF0D4170236206B20044D093 /* CharacterDetail */,
 				4A4607DC2360E44400F6A621 /* Home */,
 				4A4607C32360E35C00F6A621 /* Assets.xcassets */,
 				4A4607C52360E35C00F6A621 /* LaunchScreen.storyboard */,
@@ -180,6 +185,7 @@
 		4A4607E72360FE4900F6A621 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FF0D416E236201C10044D093 /* UIColorExtension.swift */,
 				4A4607E82360FE7300F6A621 /* CodeableExtension.swift */,
 			);
 			path = Extensions;
@@ -204,6 +210,7 @@
 		4A4607FF236106CB00F6A621 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FF0D416C2361E6B90044D093 /* CharacterCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -226,6 +233,37 @@
 				3A0A832F3ECF4056145D04E2 /* Pods_TextureDemoTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF0D4170236206B20044D093 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FF0D41732362078C0044D093 /* Interactor */,
+				FF0D4172236207850044D093 /* Presenter */,
+				FF0D4171236206C30044D093 /* Controller */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		FF0D4171236206C30044D093 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FF0D4172236207850044D093 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		FF0D41732362078C0044D093 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,8 +449,10 @@
 				4A4607E62360FBFE00F6A621 /* RequestHandler.swift in Sources */,
 				4A460801236108DD00F6A621 /* CharacterCollectionDataSource.swift in Sources */,
 				4A4607FC2361067E00F6A621 /* Characters.swift in Sources */,
+				FF0D416D2361E6B90044D093 /* CharacterCell.swift in Sources */,
 				4A4607FA2361018400F6A621 /* NetworkManager.swift in Sources */,
 				4A4607E12360E44400F6A621 /* HomeViewPresentation.swift in Sources */,
+				FF0D416F236201C10044D093 /* UIColorExtension.swift in Sources */,
 				4A4607E22360E44400F6A621 /* ViewController.swift in Sources */,
 				4A4607BD2360E35A00F6A621 /* SceneDelegate.swift in Sources */,
 			);

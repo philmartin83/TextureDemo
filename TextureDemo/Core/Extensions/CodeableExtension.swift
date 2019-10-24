@@ -20,13 +20,12 @@ extension JSONDecoder{
                 // if the response is good then decode to our object else return the error
                 if let error = error{
                     observer.onError(error)
-                    observer.onCompleted()
                 }
                 if let data = data, statusCode >= 200 && statusCode < 300{
                     do {
                         // try to decode the response.
                         let result = try JSONDecoder().decode(type, from: data)
-                       // send back the good stuff :)
+                        // send back the good stuff :)
                         observer.onNext(result)
                         observer.onCompleted()
                         
@@ -35,11 +34,11 @@ extension JSONDecoder{
                         observer.onCompleted()
                     }
                 }
-                
+
             }
             task.resume()
             return Disposables.create {
-                task.cancel()
+//                task.cancel()
             }
         }
     }

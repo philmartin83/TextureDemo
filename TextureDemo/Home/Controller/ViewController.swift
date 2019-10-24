@@ -21,6 +21,12 @@ class ViewController: ASViewController<ASDisplayNode>{
             return ASInsetLayoutSpec(insets: UIEdgeInsets.zero, child: self.homeNode)
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.topItem?.title = "Breaking-Instagram"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "CaviarDreams", size: 20)!]
+    }
 
     
     required init?(coder: NSCoder) {
